@@ -161,13 +161,13 @@ hr{
 }
 
 .boton-whatsapp{
-    padding: 10px 30px;
+    padding: 10px 0px;
     border: none;
     border-radius: 50px;
     color: var(--color-fuente);
     background-color: var(--color-hover);
     font-weight: 500;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .boton-whatsapp:hover{
@@ -190,7 +190,6 @@ hr{
 #servicios{
     background-color: #f0f0f0;
 }
-
 
 .cont-img-servicio{
     height: 350px;
@@ -228,4 +227,13 @@ hr{
         opacity: 0;
     }
 
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos con al menos 768px de ancho */
+    .navBarTop{
+        background-color: #fff;
+        transition: .3s ease-in;
+        padding: 10px 0 !important;
+    }
 }
