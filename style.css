@@ -1,0 +1,231 @@
+:root{
+    --color-principal:#996b42;
+    --color-titulo:#643c23;
+    --color-fuente:#341100;
+    --color-hover:#ffd9ab;
+}
+
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-fuente);
+}
+
+header{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+footer{
+    background-color: #000;
+}
+
+h1, h2{
+    color: var(--color-principal);
+}
+
+
+li a:hover{
+    color: var(--color-hover) !important;
+}
+
+hr{
+    color: var(--color-principal);
+}
+
+.contAnclajeWhatsapp{
+    width: 60px;
+    height: 60px;
+    background-color: #1BD741;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: -1px 1px 10px 1px #00000083;
+    cursor: pointer;
+}
+.contAnclajeWhatsappAfter{
+    display: none;
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    border-left: 20px solid #FDF3E6;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 100px;
+}
+
+.contAnclajeWhatsapp svg{
+    color: #fff;
+    transform: scale(180%);   
+    transition: .5s ease-in-out;
+    z-index: 10;
+}
+
+.navBarTop{
+    transition:.2s ease-in;
+}
+
+.navBarBottom{
+    background-color: #fff;
+    transition: .3s ease-in;
+}
+
+.cont-text-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.cont-logo{
+    display: flex;
+    gap: .5rem;
+}
+
+.img-logo{
+    width: 2.5rem;
+}
+
+.cont-carousel{
+    position: relative;
+    height: 100%;
+}
+
+.carousel{
+    height: 100%;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.img-slider{
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 100;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: var(--color-principal) !important;
+    border-radius: 50%;
+    padding: 15px;
+    border: var(--color-principal) 10px solid;
+}
+
+.carousel-caption{
+    z-index: 1000 !important;
+    display: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    padding: 0;
+}
+
+.img-slider{
+    filter: brightness(50%);
+}
+
+.titulo-slider{
+    width: 220%;
+    font-size: 3rem;
+    word-wrap: break-word; /* Para navegadores más antiguos */
+    overflow-wrap: break-word;
+    text-overflow:ellipsis;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-whatsapp{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-fuente);
+    background-color: var(--color-hover);
+    font-weight: 500;
+    min-width: 250px;
+}
+
+.boton-whatsapp:hover{
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.boton-whatsapp:hover a i{
+    color: #fff;
+}
+
+.seccion-quienes-somos{
+    background-color: #f0f0f0;
+}
+
+.cont-quienes-somos{
+    width: 50%;
+}
+
+#servicios{
+    background-color: #f0f0f0;
+}
+
+
+.cont-img-servicio{
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#contacto{
+    background-image: url(/assets/images/fondo-marmol.webp);
+}
+
+.contBajar{
+    position: absolute;
+    width: 100%;
+    bottom: 120px;
+    animation-name: efectoBajar;
+    animation-duration: 3s;
+    transition: 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation-iteration-count: infinite;
+    z-index: 1000;
+}
+
+.bi-chevron-compact-down{
+    color: #fff;
+    transform: scale(300%);
+    
+}
+
+@keyframes efectoBajar {
+    50%, 90% {
+        bottom: 90px;
+          
+    }
+    90%, 100%{
+        opacity: 0;
+    }
+
+}
