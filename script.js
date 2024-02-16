@@ -76,7 +76,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault(); 
     const nombre = document.querySelector('.nombre').value;
     const mensaje = document.querySelector('.mensaje').value;
-    const textoWhatsapp = `Hola, soy ${nombre}.\nMi teléfono es ${telefono.value}.\nMensaje: ${mensaje}`;
+    const textoWhatsapp = `Hola, soy ${nombre}.\nMi teléfono es: ${telefono.value}.\nConsulta: \n${mensaje}`;
     const linkWhatsapp = `https://wa.me/5491128980237?text=${encodeURIComponent(textoWhatsapp)}`;
     window.open(linkWhatsapp, '_blank');
 });

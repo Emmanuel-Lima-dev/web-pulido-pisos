@@ -157,8 +157,8 @@ a{
 }
 
 .titulo-slider{
-    width: 220%;
-    font-size: 3rem;
+    width: 225%;
+    font-size: 3.5rem;
     word-wrap: break-word; /* Para navegadores más antiguos */
     overflow-wrap: break-word;
     text-overflow:ellipsis;
@@ -196,7 +196,7 @@ a{
 }
 
 .cont-quienes-somos{
-    width: 50%;
+    width: 70%;
 }
 
 #servicios{
@@ -234,9 +234,6 @@ a{
     
 }
 
-.link-desarrollo{
-    color: var(--color-hover);
-}
 
 @keyframes efectoBajar {
     50%, 90% {
@@ -255,5 +252,10 @@ a{
         background-color: #fff;
         transition: .3s ease-in;
         padding: 10px 0 !important;
+    }
+
+    .titulo-slider{
+        width: 180%;
+        font-size: 3.2rem;
     }
 }

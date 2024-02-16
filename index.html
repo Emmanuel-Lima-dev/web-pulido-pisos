@@ -33,6 +33,8 @@
   </head>
   <body>
     <span class="loader"></span>
+
+    <!-- navBar -->
     <header>
       <nav class="navbar navBarTop navbar-expand-lg fixed-top py-5 navbar-dark">
         <div class="container-lg">
@@ -78,6 +80,7 @@
           </div>
         </div>
       </nav>
+      <!-- slider -->
       <div class="cont-carousel">
         <div
           id="carouselExampleFade"
@@ -85,16 +88,17 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
+
             <div class="carousel-item active" data-bs-interval="4000">
               <img
-                src="https://www.pewenpisosflotantes.com.ar/wp-content/uploads/MAMMUT-PLUS-D4671_Magnum-Eiche-Grau_Maerz-2020.jpg.jpg"
+                src="assets/images/piso-de-madera.webp"
                 class="d-block w-100 img-slider"
                 alt="imagen-carrousel-fondo-living"
               />
               <div
                 class="carousel-caption d-absolute d-flex flex-column align-items-center justify-content-center"
               >
-                <h5 class="titulo-slider concert-one-regular mt-5 animate__animated animate__fadeInDown">
+                <h5 class="titulo-slider concert-one-regular mt-md-5 animate__animated animate__fadeInDown">
                   Colocación y reparación de pisos de madera
                 </h5>
                 <button class="boton-whatsapp">
@@ -104,7 +108,24 @@
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/547df49be4b0fea277a59c7a/1441659458468-S9ETJBKDMFWCDSAUAFDJ/image-asset.jpeg"
+                src="assets/images/escalera.webp"
+                class="d-block w-100 img-slider"
+                alt="imagen-carrousel-fondo-living"
+              />
+              <div
+                class="carousel-caption d-absolute d-flex flex-column align-items-center justify-content-center"
+              >
+                <h5 class="titulo-slider concert-one-regular mt-md-5 animate__animated animate__fadeInDown">
+                  Tratamiento de escaleras
+                </h5>
+                <button class="boton-whatsapp">
+                  <a href="https://wa.link/7gn1qx" class="text-decoration-none link-what"><i class="bi bi-whatsapp pe-2"></i>HABLANOS</a>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="assets/images/piso-laqueado.webp"
                 class="d-block w-100 img-slider"
                 alt="imagen-carrousel-fondo-living"
               />
@@ -121,15 +142,15 @@
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <img
-                src="https://www.ferreteriaboston.com/wp-content/uploads/2014/07/tips-pisos-ceramicos-cr-848x400.jpg"
+                src="assets/images/piso-marmol.jpg"
                 class="d-block w-100 img-slider"
                 alt="imagen-carrousel-fondo-living"
               />
               <div
                 class="carousel-caption d-absolute d-flex flex-column align-items-center justify-content-center"
               >
-                <h5 class="titulo-slider concert-one-regular mt-5 animate__animated animate__slideInRight">
-                  PEDÍ YA! tu presupuesto sin cargo
+                <h5 class="titulo-slider concert-one-regular mt-5 animate__animated animate__zoomIn">
+                  HACÉ YA! tu consulta sin cargo
                 </h5>
                 <button class="boton-whatsapp">
                   <a href="https://wa.link/7gn1qx" class="text-decoration-none link-what"><i class="bi bi-whatsapp pe-2"></i>HABLANOS</a>
@@ -175,6 +196,8 @@
         </a>
       </span>
     </header>
+
+    <!-- boton whatsApp flotante -->
     <a href="https://wa.link/7gn1qx">
       <span class="contAnclajeWhatsapp">
         <svg
@@ -193,18 +216,19 @@
     </a>
     
     <main>
+      <!-- seccion quienes somos -->
       <section id="quienes-somos" class="seccion-quienes-somos py-3 py-md-5">
         <div
           class="cont-quienes-somos container-lg text-center pt-5 pb-2 py-md-5"
         >
           <h2 class="py-3">¿Quienes somos?</h2>
-          <p>
+          <p class="w-75 ms-auto me-auto">
             Somos Pulidos Sarandí, una empresa con sede en Avellaneda
             especializada en el pulido de todo tipo de pisos, ya sea de madera,
-            mosaico o mármol. Nos dedicamos a restaurar y recuperar la belleza
+            mosaico o mármol. Además, nos especializamos en el tratamiento de escaleras. 
+            Nos dedicamos a restaurar y recuperar la belleza
             de sus suelos, ofreciendo servicios de reparación, colocación,
-            pulido, plastificado e hidrolaqueado de pisos de madera. Además, nos
-            especializamos en el tratamiento de escaleras. Con más de 40 años de
+            pulido, plastificado e hidrolaqueado de pisos de madera. Con más de 40 años de
             experiencia en el rubro, garantizamos resultados de calidad y
             satisfacción para nuestros clientes, respaldados por nuestra
             responsabilidad, puntualidad y profesionalismo.
@@ -212,10 +236,19 @@
         </div>
         <hr class="w-25 ms-auto me-auto" />
       </section>
+      <!-- seccion servicio -->
       <section id="servicios" class="pb-5">
         <div class="container-lg text-center py-5">
           <h2 class="py-3">Servicios</h2>
+          <p>Algunos de nuestros trabajos</p>
         <div class="cont-servicio row">
+          <div class="cont-img-servicio mb-3 col-12 col-sm-6 col-lg-4">
+            <img
+              class="img-fluid"
+              src="./assets/images/Imagen de WhatsApp 2024-02-16 a las 10.24.08_128868fc.jpg"
+              alt="imagen-pulido-de-piso"
+            />
+          </div>
           <div class="cont-img-servicio mb-3 col-12 col-sm-6 col-lg-4">
             <img
               class="img-fluid"
@@ -269,21 +302,22 @@
         </div>
         
       </section>
+      <!-- seccion contacto -->
       <section id="contacto" class="py-5">
         <div class="container-lg text-center py-3 py-md-4 text-center">
           <h2 class="py-3 py-md-5">Contacto</h2>
           <div class="cont-contacto row">            
             <div class="col-12 col-md-6 text-start mt-3 mb-5">
               <h4>Ubicación</h4>
-              <p class="text-secondary"><i class="bi bi-geo-alt-fill text-secondary me-1"></i>Estamos en Sarandí, Avellaneda (Buenos Aires).</p>
+              <p class="text-secondary mb-5"><i class="bi bi-geo-alt-fill text-secondary me-1"></i>Estamos en Sarandí, Avellaneda (Buenos Aires).</p>
               <h4 class="mb-3">Contáctanos</h4>
-              <a class="under-line d-inline-block mb-2"><img src="assets/images/whatsapp_logo_icon.ico" alt="logo-whatsApp" class="me-2">WhatsApp</a><br>
-              <a class="under-line"><img src="assets/images/facebook_icon.ico" alt="logo-facebook" class="me-2">facebook</a>
+              <a href="https://wa.link/7gn1qx" class="under-line d-inline-block mb-2"><img src="assets/images/whatsapp_logo_icon.ico" alt="logo-whatsApp" class="me-2">WhatsApp</a><br>
+              <a href="" class="under-line"><img src="assets/images/facebook_icon.ico" alt="logo-facebook" class="me-2">facebook</a>
             </div>
             <hr class="w-25 ms-auto me-auto d-md-none">
             <div class="cont-form-contacto col-12 col-md-6 text-start mt-3">
               <h4 class="mb-3">Envianos tu consulta</h4>
-              <p class="text-secondary">Te contestaremos a la brevedad</p>
+              <p class="text-secondary">Te contestaremos a la brevedad.</p>
               <form id="formulario">
                 <div class="form-floating mb-3">  
 
@@ -294,7 +328,7 @@
                 <div class="form-floating mb-3">
 
                   <input type="tel" id="floatingInput2" name="telefono" required class="form-control bg-transparent telefono border-secondary" placeholder="Coloque su numero de teléfono o celular"/>
-                  <label for="floatingInput2" class="text-muted">Coloque su numero de teléfono o celular</label>
+                  <label for="floatingInput2" class="text-muted">Coloque su número de teléfono o celular</label>
 
                 </div>
                 <div class="form-floating">
@@ -316,7 +350,7 @@
       </section>
       <footer class="py-5">
         <p class="text-secondary m-0 text-center">© 2023 Todos los derechos reservados.</p>
-        <p class="text-secondary m-0 text-center">Desarrollo por <a href="https://wa.link/y072dr" class="text-underline link-desarrollo fst-italic">EmmanuelDev</a></p>
+        <p class="text-secondary m-0 text-center">Desarrollo por <a href="https://wa.link/y072dr" class="text-underline text-white fst-italic">EmmanuelDev</a></p>
       </footer>
     </main>
 
