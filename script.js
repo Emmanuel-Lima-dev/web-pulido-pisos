@@ -6,6 +6,7 @@ const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 const dropdownLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const telefono = document.querySelector('.telefono');
+const botonWhatsAppPrincipal = document.querySelector()
 
 // Función para actualizar las clases del navbar
 function updateNavbarClasses() {
