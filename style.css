@@ -61,7 +61,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 5000;
     box-shadow: #0000002f 2px 2px 5px;
     cursor: pointer;
 }
