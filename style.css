@@ -104,7 +104,10 @@ a{
     display: flex;
     gap: .5rem;
 }
-
+.navbar-toggler.custom-no-outline {
+    outline: none;
+    box-shadow: none;
+  }
 .img-logo{
     width: 2.5rem;
 }
