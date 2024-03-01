@@ -5,6 +5,9 @@
     --color-hover:#ffd9ab;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .concert-one-regular {
     font-family: "Concert One", sans-serif;
     font-weight: 400;
@@ -40,6 +43,7 @@ h1, h2{
 
 li a:hover{
     color: var(--color-hover) !important;
+    transition: .3s ease;
 }
 
 hr{
@@ -83,6 +87,11 @@ a{
     z-index: 10;
 }
 
+.contAnclajeWhatsapp:hover{
+    transform: scale(107%);
+    transition: .3s ease-in;
+}
+
 .navBarTop{
     transition:.2s ease-in;
 }
@@ -104,10 +113,12 @@ a{
     display: flex;
     gap: .5rem;
 }
+
 .navbar-toggler.custom-no-outline {
     outline: none;
     box-shadow: none;
   }
+
 .img-logo{
     width: 2.5rem;
 }
